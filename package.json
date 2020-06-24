@@ -11,7 +11,7 @@
     "pretty-quick": "^2.0.1"
   },
   "scripts": {
-    "precommit": "node test.js"
+    "precommit": "lint-staged"
   },
   "husky": {
     "hooks": {
@@ -19,6 +19,6 @@
     }
   },
   "lint-staged": {
-    "*.js": "prettier --write"
+    "*.js": "yarn prettier --write"
   }
 }
